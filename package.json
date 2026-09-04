@@ -1,6 +1,6 @@
 {
   "name": "pi-fzf",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/kaofelix/pi-fzf"
@@ -12,7 +12,7 @@
     "test": "vitest",
     "check": "biome check",
     "format": "biome check --write",
-    "prepare": "lefthook install"
+    "prepare": "if command -v lefthook >/dev/null 2>&1; then lefthook install; fi"
   },
   "dependencies": {
     "fzf": "^0.5.2"
